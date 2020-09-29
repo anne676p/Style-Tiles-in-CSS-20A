@@ -223,6 +223,7 @@ button:active {
 
 .h1-sample {
   font-family: bree, sans-serif;
+  color: #3f3f3f;
   font-weight: 400;
   font-style: normal;
   font-size: 3rem;
@@ -230,12 +231,14 @@ button:active {
 
 .h2-sample {
   font-family: var(--secondary-font);
+  color: #3f3f3f;
   font-style: italic;
   font-size: 1.25rem;
 }
 
 p.typography-sample {
   font-family: var(--secondary-font);
+  color: #3f3f3f;
   line-height: 1.5;
   max-width: 960px;
 }
