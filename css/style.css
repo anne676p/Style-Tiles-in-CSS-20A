@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400italic,800italic,400,800");
 /* @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap'); */
 @import url("https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic");
+@import url("https://use.typekit.net/rwp5xyh.css");
 
 * {
   box-sizing: border-box;
@@ -17,20 +18,20 @@ use the fonts in other ways in the font hierarchy etc. */
   --bg-color: red;
   --link-color: green;
   --link-hover-color: blue;
-  --color-4: hotpink;
-  --color-5: rebeccapurple;
 
-  --primary-font: "Open Sans", sans-serif;
-  --secondary-font: "Droid Serif", serif;
+  --primary-font: "font-family: acumin-pro, sans-serif;
+font-weight: 400;
+  ;
+  --secondary-font: "font-family: acumin-pro, sans-serif;
+font-weight: 400;
+  font-style: normal;
   --main-text-color: #000;
 
   --white-space: 1rem;
 
-  --bg-color: #000;
-  --link-color: #000;
-  --link-hover-color: #000;
-  --color-4: #000;
-  --color-5: #000;
+  --bg-color: #DFDFDF;
+  --link-color: #929090;
+  --link-hover-color: #99B5BF;
 
   --primary-font: sans-serif;
   --secondary-font: serif;
@@ -58,15 +59,14 @@ footer {
 }
 
 .full-width {
-  background: var(--bg-color);
+  background: url(../img/struktur_water.png) top left repeat;
+  opacity: 70%;
   color: white;
   width: 100%;
 }
 
 .header-wrapper h1 {
-  font-size: 3rem;
-  text-transform: uppercase;
-  letter-spacing: -2px;
+  font-size: 4rem;
   padding-right: 0.75em;
   font-weight: bold;
   color: white;
@@ -88,6 +88,7 @@ footer {
   font-size: 0.8rem;
 }
 
+
 main {
   padding: calc(2 * var(--white-space));
 }
@@ -105,7 +106,6 @@ section {
 
 ul {
   display: flex;
-  justify-content: space-between;
 }
 
 .swatches li {
@@ -130,35 +130,44 @@ ul li:last-child {
   background-color: var(--link-hover-color);
 }
 
-.color-swatch-4 {
-  background-color: var(--color-4);
-}
-
-.color-swatch-5 {
-  background-color: var(--color-5);
-}
 
 .textures li {
   height: 30vw;
   width: 40%;
-  margin-right: 5vw;
 }
 
+
 .texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
+  background: url(../img/rod.png);
+  background-position: center;
+  background-size: cover;
 }
 
 .texture-swatch-2 {
-  background: url(../img/subtle_grunge.png) top left repeat;
+  background: url(../img/lilla_Mockup.png);
+  background-position: center;
+  background-size: cover;
 }
 
-.texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
-}
 
 .texture-swatch-3 {
-  background: url(../img/white_paperboard.png) top left repeat;
+  background: url(../img/gul_Mockup.png);
+  background-position: center;
+  background-size: cover;
 }
+
+.texture-swatch-4 {
+  background: url(../img/Green_Mockup.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.texture-swatch-5 {
+  background: url(../img/mix_color.png);
+  background-position: center;
+  background-size: cover;
+}
+
 
 .images ul {
   flex-direction: column;
@@ -172,23 +181,24 @@ ul li:last-child {
 }
 
 button {
-  padding: 1rem;
-  border-radius: 4px;
-  background: var(--link-color);
+  padding: 0.5rem 3rem;
   text-align: center;
   text-decoration: none;
-  font: bold 1.25em/1 var(--primary-font);
+  font: 1.25em;
   letter-spacing: 1px;
-  color: white;
+  color: #99B5BF;
+  background: var(--color-5);
   text-transform: uppercase;
-  text-shadow: 0px -1px 0px #0374a0;
   transition: all 0.2s ease;
   cursor: pointer;
   margin: 0 1rem 1rem 0;
+  border: solid #99B5BF;
 }
 
 .secondary-button {
   background: var(--color-5);
+  color: #929090;
+  border-color: #929090;
 }
 
 button:focus,
@@ -199,8 +209,8 @@ button:focus-within {
 }
 
 button:hover {
-  background-color: var(--link-hover-color);
-  transform: scale(3) rotate(40deg);
+  transform: scale(1.1);
+  opacity: 80%;
 }
 
 button:active {
@@ -212,8 +222,10 @@ button:active {
 }
 
 .h1-sample {
-  font-size: 2.4rem;
-  font-weight: bold;
+  font-family: bree, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
 }
 
 .h2-sample {
@@ -238,17 +250,19 @@ em {
 
 a {
   font-family: var(--primary-font);
-  color: var(--link-color);
+  color: var(--link-hover-color);
   font-weight: bold;
   text-decoration: none;
   transition: all 0.2s;
+  border-left: solid;
+  padding-left: 0.3em;
+  border-color: var(--link-hover-color);
 }
 
 a:hover {
   color: var(--link-hover-color);
-  font-size: 4rem;
-  background-color: var(--color-4);
-  opacity: 0.1;
+  font-size: 1.2rem;
+  opacity: 80%;
 }
 
 p[class*="font-details-"] {
@@ -266,6 +280,7 @@ p[class*="font-details-"] {
 
 .adjectives ul {
   flex-direction: column;
+  justify-content: space-between;
 }
 
 footer {
